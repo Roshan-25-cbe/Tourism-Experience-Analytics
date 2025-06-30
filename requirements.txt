@@ -1,0 +1,9 @@
+numpy==2.3.1
+pandas==2.3.0
+openpyxl==3.1.5
+scikit-learn==1.7.0
+lightgbm==4.6.0
+scikit-surprise==1.1.4
+matplotlib==3.8.0 # Based on previous common installs
+seaborn==0.13.0 # Based on previous common installs
+streamlit==1.36.0 # Based on Streamlit's last known release at time of your install

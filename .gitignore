@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# Jupyter notebooks checkpoint
+.ipynb_checkpoints/
+
+# IDE specific files
+.vscode/ 
+
+# Data directories (contains large/generated files)
+raw_data_pkl/
+processed_data/
+models/
+eda_plot/
+evaluation_results/
+
+# Streamlit specific files
+.streamlit/
