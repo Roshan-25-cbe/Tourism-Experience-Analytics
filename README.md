@@ -28,7 +28,7 @@ The project is logically organized into several Python scripts for clarity and m
 
 * `data_loading.py`: Loads raw Excel datasets and converts them to optimized `.pkl` format.
 * `data_preprocessing.py`: Cleans, preprocesses, merges data, performs feature engineering, and applies optimized one-hot encoding. Saves processed data (`.pkl` and a viewable `.xlsx` sample).
-* `EDA.py`: Conducts Exploratory Data Analysis, generating and saving insightful visualizations.
+* `eda.py`: Conducts Exploratory Data Analysis, generating and saving insightful visualizations.
 * `model_training.py`: Trains the machine learning models (Regression, Classification, Recommendation) and saves them along with necessary components (scalers, feature lists, label encoder).
 * `model_evaluation.py`: Evaluates the performance of the trained models and generates detailed reports.
 * `app.py`: The main Streamlit application, serving as the interactive user interface.
@@ -76,9 +76,9 @@ Follow these steps to set up and launch the project on your machine:
     Run the following scripts sequentially from your terminal (with the virtual environment activated) to process data, train models, and evaluate:
 
     ```bash
-    python tourism_analytics.py
+    python data_loading.py
     python data_preprocessing.py
-    python EDA.py
+    python eda.py
     python model_training.py
     python model_evaluation.py
     ```
