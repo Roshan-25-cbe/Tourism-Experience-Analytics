@@ -118,8 +118,8 @@ Follow these steps to set up and launch the project on your machine:
 ## 🧑‍💻 Project Author
 
 -   **Roshan**
--   GitHub: [Roshan-25-cbe](https://github.com/Roshan-25-cbe) *(Remember to replace with your actual GitHub link)*
--   LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a) *(Ensure this is your correct LinkedIn URL)*
+-   GitHub: [Roshan-25-cbe](https://github.com/Roshan-25-cbe) 
+-   LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a) 
 
 ## 📧 Contact
 
