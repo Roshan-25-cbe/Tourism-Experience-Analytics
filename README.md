@@ -120,6 +120,10 @@ Follow these steps to set up and launch the project on your machine:
 * **Real-time Recommendations:** Integrate with a database and build a system for real-time recommendation generation.
 * **User Interface Refinements:** Further enhance the Streamlit UI with more interactive plots, user profiles, and personalized dashboards.
 
+## Presentation
+
+The project has been presented, and you can find the slides [here](https://1drv.ms/p/c/ff0f2d98614978aa/EWWBB8DScz1EqTiNXyb1TnMB6PUvPfZz5-GJyxCUvWpa7g?e=BuyBjN)
+
 ## 🧑‍💻 Project Author
 
 * **Roshan**
