@@ -38,6 +38,7 @@ The project is logically organized into several Python scripts for clarity and m
 * `models/`: Directory for trained machine learning models and supporting files. (Auto-generated)
 * `evaluation_results/`: Directory for model performance reports. (Auto-generated)
 * `.gitignore`: Specifies files and directories to be excluded from version control.
+* `requirements.txt`: Lists all Python libraries required to run the project.
 
 ## ⚙️ How to Run Locally
 
@@ -45,10 +46,9 @@ Follow these steps to set up and launch the project on your machine:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/Tourism-Experience-Analytics.git](https://github.com/your-username/Tourism-Experience-Analytics.git)
+    git clone [https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git](https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git)
     cd Tourism-Experience-Analytics
     ```
-    *(Remember to replace `your-username` with your actual GitHub username.)*
 
 2.  **Create and Activate a Virtual Environment:**
     ```bash
@@ -63,9 +63,9 @@ Follow these steps to set up and launch the project on your machine:
 4.  **Install Dependencies:**
     With your virtual environment active, install all required Python libraries.
     ```bash
-    pip install pandas openpyxl scikit-learn lightgbm scikit-surprise matplotlib seaborn
+    pip install -r requirements.txt
     ```
-    * *If you encounter `numpy` compatibility issues (e.g., `ModuleNotFoundError` or `ImportError` related to `numpy.core.multiarray`), try reinstalling `numpy` and `scikit-surprise` specifically:*
+    * *If you encounter `numpy` compatibility issues (e.g., `AttributeError: float object has no attribute 'rmse'` or `ImportError: numpy.core.multiarray failed to import`), try reinstalling `numpy` and `scikit-surprise` specifically:*
         ```bash
         pip uninstall scikit-surprise numpy -y
         pip install numpy==1.26.4 # Compatible version
@@ -95,11 +95,14 @@ Follow these steps to set up and launch the project on your machine:
 *(Metrics based on evaluation on a test set)*
 
 * **Regression Model (LGBMRegressor) for Attraction Rating:**
-    * R-squared (R2): **0.7398** (Explains ~74% of rating variance)
+    * Mean Squared Error (MSE): **0.2450**
     * Root Mean Squared Error (RMSE): **0.4950** (Average prediction error of ~0.5 stars on a 1-5 scale)
+    * R-squared (R2): **0.7398** (Explains ~74% of rating variance)
 
 * **Classification Model (RandomForestClassifier) for Visit Mode:**
     * Accuracy: **0.4975** (~50% correct predictions)
+    * Precision (weighted): **0.4857**
+    * Recall (weighted): **0.4975**
     * F1-Score (weighted): **0.4838**
     * *Note: The classification model's accuracy, while functional, indicates challenges due to significant class imbalance and dataset complexity. Performance varies across different visit modes. Further optimization would focus here.*
 
@@ -113,16 +116,17 @@ Follow these steps to set up and launch the project on your machine:
 * **Advanced Imbalance Handling:** Implement sophisticated techniques like SMOTE or ADASYN for the classification task.
 * **Feature Enrichment:** Explore creating more complex features or integrating external data sources.
 * **Alternative Algorithms:** Experiment with deep learning models or other specialized algorithms for further performance gains.
-* **Scalability:** Adapt the pipeline for even larger datasets using distributed computing frameworks.
+* **Scalability:** Adapt the pipeline for even larger datasets, potentially using Dask or Spark.
+* **Real-time Recommendations:** Integrate with a database and build a system for real-time recommendation generation.
+* **User Interface Refinements:** Further enhance the Streamlit UI with more interactive plots, user profiles, and personalized dashboards.
 
 ## 🧑‍💻 Project Author
 
--   **Roshan**
--   GitHub: [Roshan-25-cbe](https://github.com/Roshan-25-cbe) 
--   LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a) 
+* **Roshan**
+* GitHub: [https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git](https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git)
+* LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a)
 
 ## 📧 Contact
 
 For any inquiries, collaboration opportunities, or feedback, feel free to connect:
-* Email: [roshana36822@gmail.com](mailto:roshana36822@gmail.com) 
-
+* Email: [roshana36822@gmail.com](mailto:roshana36822@gmail.com)
